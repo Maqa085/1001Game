@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerZone | 1001 Oyun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GAMER<span>ZONE</span></div>
+        <div class="search-box">
+            <input type="text" placeholder="Oyun axtar...">
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Ən Populyar Oyunlar</h1>
+        <p>Maşın, Atəş və Su, və daha çoxu burada!</p>
+    </header>
+
+    <main class="container">
+        <section class="game-grid" id="gameGrid">
+            <div class="game-card" onclick="openGame('https://www.game-iframe-url.com/fireboy-watergirl')">
+                <div class="badge">Yeni</div>
+                <img src="https://images.unsplash.com/photo-1614014077943-840960ce6694?auto=format&fit=crop&w=300&q=80" alt="Atəş və Su">
+                <div class="card-info">
+                    <h3>Atəş və Su</h3>
+                    <p>Macəra • 2 Nəfərlik</p>
+                    <button class="play-btn">Oyna</button>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="openGame('https://www.game-iframe-url.com/car-racing')">
+                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=300&q=80" alt="Sürətli Maşınlar">
+                <div class="card-info">
+                    <h3>Sürətli Maşınlar</h3>
+                    <p>Yarış • 3D</p>
+                    <button class="play-btn">Oyna</button>
+                </div>
+            </div>
+
+            <div class="game-card" onclick="openGame('https://www.game-iframe-url.com/zombie-shooter')">
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=300&q=80" alt="Zombi Atıcı">
+                <div class="card-info">
+                    <h3>Zombi Atıcı</h3>
+                    <p>Aksiyon • Atışma</p>
+                    <button class="play-btn">Oyna</button>
+                </div>
+            </div>
+            
+            </section>
+    </main>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeGame()">&times;</span>
+            <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
